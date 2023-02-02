@@ -9,34 +9,34 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-      <canvas id="mapCanvas"></canvas>
-    <img id="mapImg" class="map-img" src="labeled.png" usemap="#map" />
-    <map id="map" name="map">
-        <area onmouseenter="show(0, 1)" onmouseleave="hide()" target="_blank" alt="Cook's Assistant" title="Cook's Assistant" href="https://oldschool.runescape.wiki/w/Cook%27s_Assistant" coords="1169,1241,12" shape="circle">
-        <area onmouseenter="show(1, 2)" onmouseleave="hide()" target="_blank" alt="Sheep Shearer" title="Sheep Shearer" href="https://oldschool.runescape.wiki/w/Sheep_Shearer" coords="1092,1001,12" shape="circle">
-        <area onmouseenter="show(2, 3)" onmouseleave="hide()" target="_blank" alt="X Marks the Spot" title="X Marks the Spot" href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot" coords="1249,1134,13" shape="circle">
-        <area onmouseenter="show(3, 4)" onmouseleave="hide()" target="_blank" alt="Pirate's Treasure" title="Pirate's Treasure" href="https://oldschool.runescape.wiki/w/Pirate%27s_Treasure" coords="536,1081,12" shape="circle">
-        <area onmouseenter="show(4, 5)" onmouseleave="hide()" target="_blank" alt="Rune Mysteries" title="Rune Mysteries" href="https://oldschool.runescape.wiki/w/Rune_Mysteries" coords="1167,1203,12" shape="circle">
-        <area onmouseenter="show(5, 6)" onmouseleave="hide()" target="_blank" alt="Romeo & Juliet" title="Romeo & Juliet" href="https://oldschool.runescape.wiki/w/Romeo_%26_Juliet" coords="1174,394,11" shape="circle">
-        <area onmouseenter="show(6, 7)" onmouseleave="hide()" target="_blank" alt="The Restless Ghost" title="The Restless Ghost" href="https://oldschool.runescape.wiki/w/The_Restless_Ghost" coords="1306,1267,11" shape="circle">
-        <area onmouseenter="show(7, 8)" onmouseleave="hide()" target="_blank" alt="Prince Ali Rescue" title="Prince Ali Rescue" href="https://oldschool.runescape.wiki/w/Prince_Ali_Rescue" coords="1528,1440,12" shape="circle">
-        <area onmouseenter="show(8, 9)" onmouseleave="hide()" target="_blank" alt="Misthalin Mysteries" title="Misthalin Mysteries" href="https://oldschool.runescape.wiki/w/Misthalin_Mystery" coords="1275,1478,12" shape="circle">
-        <area onmouseenter="show(9, 10)" onmouseleave="hide()" target="_blank" alt="Imp Catcher" title="Imp Catcher" href="https://oldschool.runescape.wiki/w/Imp_Catcher" coords="753,1435,12" shape="circle">
-        <area onmouseenter="show(10, 11)" onmouseleave="hide()" target="_blank" alt="Ernest the Chicken" title="Ernest the Chicken" href="https://oldschool.runescape.wiki/w/Ernest_the_Chicken" coords="782,785,12" shape="circle">
-        <area onmouseenter="show(11, 12)" onmouseleave="hide()" target="_blank" alt="Vampyre Slayer" title="Vampyre Slayer" href="https://oldschool.runescape.wiki/w/Vampyre_Slayer" coords="729,1020,12" shape="circle">
-        <area onmouseenter="show(12, 13)" onmouseleave="hide()" target="_blank" alt="Doric's Quest" title="Doric's Quest" href="https://oldschool.runescape.wiki/w/Doric%27s_Quest" coords="138,289,12" shape="circle">
-        <area onmouseenter="show(13, 14)" onmouseleave="hide()" target="_blank" alt="Black Knight's Fortress" title="Black Knight's Fortress" href="https://oldschool.runescape.wiki/w/Black_Knights%27_Fortress" coords="171,738,12" shape="circle">
-        <area onmouseenter="show(14, 15)" onmouseleave="hide()" target="_blank" alt="Shield of Arrav" title="Shield of Arrav" href="https://oldschool.runescape.wiki/w/Shield_of_Arrav" coords="1174,117,12" shape="circle">
-        <area onmouseenter="show(15, 16)" onmouseleave="hide()" target="_blank" alt="Demon Slayer" title="Demon Slayer" href="https://oldschool.runescape.wiki/w/Demon_Slayer" coords="1142,394,12" shape="circle">
-        <area onmouseenter="show(16, 17)" onmouseleave="hide()" target="_blank" alt="Below Ice Mountain" title="Below Ice Mountain" href="https://oldschool.runescape.wiki/w/Below_Ice_Mountain" coords="261,332,12" shape="circle">
-        <area onmouseenter="show(17, 18)" onmouseleave="hide()" target="_blank" alt="The Knight's Sword" title="The Knight's Sword" href="https://oldschool.runescape.wiki/w/The_Knight%27s_Sword" coords="223,726,12" shape="circle">
-        <area onmouseenter="show(18, 19)" onmouseleave="hide()" target="_blank" alt="Witch's Potion" title="Witch's Potion" href="https://oldschool.runescape.wiki/w/Witch%27s_Potion" coords="203,1271,12" shape="circle">
-        <area onmouseenter="show(19, 20)" onmouseleave="hide()" target="_blank" alt="The Corsair Curse" title="The Corsair Curse" href="https://oldschool.runescape.wiki/w/The_Corsair_Curse" coords="440,995,12" shape="circle">
-        <area onmouseenter="show(20, 21)" onmouseleave="hide()" target="_blank" alt="Goblin Diplomacy" title="Goblin Diplomacy" href="https://oldschool.runescape.wiki/w/Goblin_Diplomacy" coords="162,42,12" shape="circle">
-        <area onmouseenter="show(21, null)" onmouseleave="hide()" target="_blank" alt="Dragon Slayer I" title="Dragon Slayer I" href="https://oldschool.runescape.wiki/w/Dragon_Slayer_I" coords="1097,649,12" shape="circle">
-    </map>
-    
-    
+    <div class="container">
+        <canvas id="mapCanvas"></canvas>
+        <img id="mapImg" src="labeled.png" usemap="#map" />
+        <map id="map" name="map">
+            <area onmouseenter="show(0, 1)" onmouseleave="hide()" target="_blank" alt="Cook's Assistant" title="Cook's Assistant" href="https://oldschool.runescape.wiki/w/Cook%27s_Assistant" coords="1169,1241,12" shape="circle">
+            <area onmouseenter="show(1, 2)" onmouseleave="hide()" target="_blank" alt="Sheep Shearer" title="Sheep Shearer" href="https://oldschool.runescape.wiki/w/Sheep_Shearer" coords="1092,1001,12" shape="circle">
+            <area onmouseenter="show(2, 3)" onmouseleave="hide()" target="_blank" alt="X Marks the Spot" title="X Marks the Spot" href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot" coords="1249,1134,13" shape="circle">
+            <area onmouseenter="show(3, 4)" onmouseleave="hide()" target="_blank" alt="Pirate's Treasure" title="Pirate's Treasure" href="https://oldschool.runescape.wiki/w/Pirate%27s_Treasure" coords="536,1081,12" shape="circle">
+            <area onmouseenter="show(4, 5)" onmouseleave="hide()" target="_blank" alt="Rune Mysteries" title="Rune Mysteries" href="https://oldschool.runescape.wiki/w/Rune_Mysteries" coords="1167,1203,12" shape="circle">
+            <area onmouseenter="show(5, 6)" onmouseleave="hide()" target="_blank" alt="Romeo & Juliet" title="Romeo & Juliet" href="https://oldschool.runescape.wiki/w/Romeo_%26_Juliet" coords="1174,394,11" shape="circle">
+            <area onmouseenter="show(6, 7)" onmouseleave="hide()" target="_blank" alt="The Restless Ghost" title="The Restless Ghost" href="https://oldschool.runescape.wiki/w/The_Restless_Ghost" coords="1306,1267,11" shape="circle">
+            <area onmouseenter="show(7, 8)" onmouseleave="hide()" target="_blank" alt="Prince Ali Rescue" title="Prince Ali Rescue" href="https://oldschool.runescape.wiki/w/Prince_Ali_Rescue" coords="1528,1440,12" shape="circle">
+            <area onmouseenter="show(8, 9)" onmouseleave="hide()" target="_blank" alt="Misthalin Mysteries" title="Misthalin Mysteries" href="https://oldschool.runescape.wiki/w/Misthalin_Mystery" coords="1275,1478,12" shape="circle">
+            <area onmouseenter="show(9, 10)" onmouseleave="hide()" target="_blank" alt="Imp Catcher" title="Imp Catcher" href="https://oldschool.runescape.wiki/w/Imp_Catcher" coords="753,1435,12" shape="circle">
+            <area onmouseenter="show(10, 11)" onmouseleave="hide()" target="_blank" alt="Ernest the Chicken" title="Ernest the Chicken" href="https://oldschool.runescape.wiki/w/Ernest_the_Chicken" coords="782,785,12" shape="circle">
+            <area onmouseenter="show(11, 12)" onmouseleave="hide()" target="_blank" alt="Vampyre Slayer" title="Vampyre Slayer" href="https://oldschool.runescape.wiki/w/Vampyre_Slayer" coords="729,1020,12" shape="circle">
+            <area onmouseenter="show(12, 13)" onmouseleave="hide()" target="_blank" alt="Doric's Quest" title="Doric's Quest" href="https://oldschool.runescape.wiki/w/Doric%27s_Quest" coords="138,289,12" shape="circle">
+            <area onmouseenter="show(13, 14)" onmouseleave="hide()" target="_blank" alt="Black Knight's Fortress" title="Black Knight's Fortress" href="https://oldschool.runescape.wiki/w/Black_Knights%27_Fortress" coords="171,738,12" shape="circle">
+            <area onmouseenter="show(14, 15)" onmouseleave="hide()" target="_blank" alt="Shield of Arrav" title="Shield of Arrav" href="https://oldschool.runescape.wiki/w/Shield_of_Arrav" coords="1174,117,12" shape="circle">
+            <area onmouseenter="show(15, 16)" onmouseleave="hide()" target="_blank" alt="Demon Slayer" title="Demon Slayer" href="https://oldschool.runescape.wiki/w/Demon_Slayer" coords="1142,394,12" shape="circle">
+            <area onmouseenter="show(16, 17)" onmouseleave="hide()" target="_blank" alt="Below Ice Mountain" title="Below Ice Mountain" href="https://oldschool.runescape.wiki/w/Below_Ice_Mountain" coords="261,332,12" shape="circle">
+            <area onmouseenter="show(17, 18)" onmouseleave="hide()" target="_blank" alt="The Knight's Sword" title="The Knight's Sword" href="https://oldschool.runescape.wiki/w/The_Knight%27s_Sword" coords="223,726,12" shape="circle">
+            <area onmouseenter="show(18, 19)" onmouseleave="hide()" target="_blank" alt="Witch's Potion" title="Witch's Potion" href="https://oldschool.runescape.wiki/w/Witch%27s_Potion" coords="203,1271,12" shape="circle">
+            <area onmouseenter="show(19, 20)" onmouseleave="hide()" target="_blank" alt="The Corsair Curse" title="The Corsair Curse" href="https://oldschool.runescape.wiki/w/The_Corsair_Curse" coords="440,995,12" shape="circle">
+            <area onmouseenter="show(20, 21)" onmouseleave="hide()" target="_blank" alt="Goblin Diplomacy" title="Goblin Diplomacy" href="https://oldschool.runescape.wiki/w/Goblin_Diplomacy" coords="162,42,12" shape="circle">
+            <area onmouseenter="show(21, null)" onmouseleave="hide()" target="_blank" alt="Dragon Slayer I" title="Dragon Slayer I" href="https://oldschool.runescape.wiki/w/Dragon_Slayer_I" coords="1097,649,12" shape="circle">
+        </map>
+    </div>
 
     <script src="index.js" async defer></script>
   </body>

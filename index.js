@@ -1,9 +1,9 @@
 const map = document.getElementById("mapImg");
 
-let { offsetLeft, scrollHeight, scrollWidth } = map;
+let { scrollHeight, scrollWidth } = map;
 
 const canvas = document.getElementById("mapCanvas");
-canvas.setAttribute("style", `position:absolute;left:${offsetLeft}`);
+canvas.setAttribute("style", `position:absolute`);
 canvas.setAttribute("width", scrollWidth);
 canvas.setAttribute("height", scrollHeight);
 
